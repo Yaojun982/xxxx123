@@ -4,9 +4,18 @@
 <title>Homework</title>
 </head>
 <body>
-
+<input type="button" id="test" style="display:none;" value="隱藏按鈕" onclick="alert('OOOOOOOOOOOOOOOOOO')">
+<input type="button" id="btn_test" style="display:block;" value="顯示按鈕" >
 <h1 style ="color:Tomato;">This is a Heading</h1>
 <p style ="color:blue;">This is a paragraph.</p>
 
 </body>
 </html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+ $("#btn_test").click(function(){
+  $("#test").click();
+ });
+
+
+</script>
